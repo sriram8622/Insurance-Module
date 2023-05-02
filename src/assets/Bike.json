@@ -1,0 +1,157 @@
+{
+  "dataMap": [
+    {
+      "key": "TVS",
+      "value": [
+        {
+          "name": "Raider 125",
+          "variant": "Base",
+          "fuel": "67 Km/l",
+          "year": "2023",
+          "url": "https://financialexpresswpcontent.s3.amazonaws.com/uploads/2021/09/2-16.jpg"
+        },
+        {
+          "name": "Apache RTR 160",
+          "variant": "Base",
+          "fuel": "45 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/97549/apache-rtr-160-4v-right-front-three-quarter-4.jpeg?isig=0&q=80"
+        },
+        {
+          "name": "Apache RTR 240",
+          "variant": "Base",
+          "fuel": "40 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1280x720/bw/models/tvs-apache-rtr-200-4v-single-channel-abs--bs-vi20200922135525.jpg?q=80"
+        },
+        {
+          "name": "Jupiter",
+          "variant": "Basic",
+          "fuel": "50 to 62 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1200x900/n/cw/ec/46749/tvs-jupiter-front-three-quarter25.jpeg"
+        },
+        {
+          "name": "Jupiter",
+          "variant": "ZXI",
+          "fuel": "50 to 62 Km/l",
+          "year": "2023",
+          "url": "https://bd.gaadicdn.com/processedimages/tvs/tvs-jupiter/494X300/tvs-jupiter611c8e3c80cbb.jpg?impolicy=resize&imwidth=360"
+        }
+      ]
+    },
+    {
+      "key": "Yamaha",
+      "value": [
+        {
+          "name": "YZF-R6",
+          "variant": "Base",
+          "fuel": "40 Km/l",
+          "year": "2023",
+          "url": "https://www.yamaha-motor.com.au/-/media/products/motorcycle/road/supersport/2022/yzf-r6n/overview-panel/2022_yzf-r6_mdnm6_aus_stu_003_450x375.ashx"
+        },
+        {
+          "name": "YZF-R25",
+          "variant": "Base",
+          "fuel": "40 Km/l",
+          "year": "2023",
+          "url": "https://media.zigcdn.com/media/content/2022/Jan/480684122-r25_560x420.jpg"
+        },
+        {
+          "name": "Fazzio",
+          "variant": "Base",
+          "fuel": "55 Km/l",
+          "year": "2023",
+          "url": "https://images.hindustantimes.com/auto/img/2022/01/25/1600x900/Yamaha_1643104050834_1643104058929.jpg"
+        },
+        {
+          "name": "Ray Z",
+          "variant": "Base",
+          "fuel": "55 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/664x374/bw/models/yamaha-rayz.jpg?20190502194143&q=75"
+        },
+        {
+          "name": "XSR 155",
+          "variant": "Base",
+          "fuel": "55 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/476x268/bw/models/yamaha-xsr155-standard20190819142450.jpg"
+        }
+      ]
+    },
+    {
+      "key": "Royal Enfield",
+      "value": [
+        {
+          "name": "Classic 350",
+          "variant": "Base",
+          "fuel": "35 to 37 Km/l",
+          "year": "2023",
+          "url": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/classic-350/colors/studio-shots/dual-channel/dark-stealth-black/01-dark-stealth-black.png"
+        },
+        {
+          "name": "Hunter 350",
+          "variant": "Base",
+          "fuel": "36 Km/l",
+          "year": "2023",
+          "url": "https://mcn-images.bauersecure.com/wp-images/188998/royal-enfield-hunter-350-01.jpg"
+        },
+        {
+          "name": "Himalayan",
+          "variant": "Base",
+          "fuel": "30 to 33 Km/l",
+          "year": "2023",
+          "url": "https://www.royalenfield.com/content/dam/royal-enfield/united-kingdom/motorcycles/himalayan/colours/new-colors/studio-shots/granite-black/side-view.png"
+        },
+        {
+          "name": "Continental GT 650",
+          "variant": "Base",
+          "fuel": "27 Km/l",
+          "year": "2023",
+          "url": "https://www.royalenfield.com/content/dam/royal-enfield/usa/motorcycles/continental-gt/colours/studio-shots/new/mr-clean/side-view.png"
+        },
+        {
+          "name": "Interceptor 650",
+          "variant": "Base",
+          "fuel": "25 Km/l",
+          "year": "2023",
+          "url": "https://www.royalenfield.com/content/dam/royal-enfield/united-kingdom/motorcycles/interceptor/colours/studio-shots/new/baker-express/side-view.png"
+        }
+      ]
+    },
+    {
+      "key": "KTM",
+      "value": [
+        {
+          "name": "200 DUKE",
+          "variant": "Base",
+          "fuel": "35 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/130143/ktm-125-duke-right-side-view2.jpeg?isig=0"
+        },
+        {
+          "name": "RC 390",
+          "variant": "Base",
+          "fuel": "28 Km/l",
+          "year": "2023",
+          "url": "https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/KTM-RC-390-210120210921.jpg"
+        },
+        {
+          "name": "Adventure 390",
+          "variant": "Base",
+          "fuel": "29 Km/l",
+          "year": "2023",
+          "url": "https://bd.gaadicdn.com/processedimages/ktm/390-adventure/640X309/390-adventure6274aeef80793.jpg"
+        },
+        {
+          "name": "890 Adventure R",
+          "variant": "Base",
+          "fuel": "25 Km/l",
+          "year": "2023",
+          "url": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20201007102322_KTM-890-ADV-R.jpg&w=700&q=90&c=1"
+        }
+      ]
+    }
+  ]
+}

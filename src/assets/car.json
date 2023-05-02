@@ -1,0 +1,164 @@
+{
+  "dataMap": [
+    {
+      "key": "Tata",
+      "value": [
+        {
+          "name": "Nexon",
+          "variant": "XM",
+          "fuel": "17 to 24 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrtT2o4AhoQG44J4SL9kgV9AjPEsT4nxaY_G9ONc&usqp=CAE&s"
+        },
+        {
+          "name": "Nexon",
+          "variant": "XM (S)",
+          "fuel": "17 to 24 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrtT2o4AhoQG44J4SL9kgV9AjPEsT4nxaY_G9ONc&usqp=CAE&s"
+        },
+        {
+          "name": "Tiago",
+          "variant": "XE",
+          "fuel": "19 to 27 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2UkTUOHzmTk-xHbyFHM01BOb8GWWlvpXLqjdQjI&usqp=CAE&s"
+        },
+        {
+          "name": "Tiago",
+          "variant": "XT",
+          "fuel": "19 to 27 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2UkTUOHzmTk-xHbyFHM01BOb8GWWlvpXLqjdQjI&usqp=CAE&s"
+        },
+        {
+          "name": "Safari",
+          "variant": "XMS",
+          "fuel": "14 to 16 Km/l",
+          "year": "2023",
+          "url": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20230104055539_20221003102454_tata.jpg&w=700&q=90&c=1"
+        }
+      ]
+    },
+    {
+      "key": "Mahindra",
+      "value": [
+        {
+          "name": "Thar",
+          "variant": "AX OPT",
+          "fuel": "10 to 15 Km/l",
+          "year": "2023",
+          "url": "https://www.financialexpress.com/wp-content/uploads/2023/01/2023-Mahindra-Thar-2.jpg?w=1024"
+        },
+        {
+          "name": "Thar",
+          "variant": "LX",
+          "fuel": "10 to 15 Km/l",
+          "year": "2023",
+          "url": "https://www.cartoq.com/wp-content/uploads/2022/12/thar-5-door-featured.jpg"
+        },
+        {
+          "name": "XUV700",
+          "variant": "MX",
+          "fuel": "10 to 15 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3UXwUm8OrXb5O0mfEr0LxwoDQrMEjr3LBrgDTvQ&usqp=CAE&s"
+        },
+        {
+          "name": "XUV300",
+          "variant": "W4",
+          "fuel": "17 to 20 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStATyiGKLpTuiBhhw98rzXxjBSRHqFc2e4eyRskRw&usqp=CAE&s"
+        },
+        {
+          "name": "Scorpio Classic",
+          "variant": "S 7STR",
+          "fuel": "17 to 20 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPbLxZXTdYxJ9yfpkIyfV9uRZVycMJi-adt82XI4&usqp=CAE&s"
+        }
+      ]
+    },
+    {
+      "key": "Maruti Suzuki",
+      "value": [
+        {
+          "name": "Brezza",
+          "variant": "LXI",
+          "fuel": "20 to 26 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgBZy_QP9wjGhOjvqx_dxRSLtQ6ykJajvax_iU1w&usqp=CAE&s"
+        },
+        {
+          "name": "Brezza",
+          "variant": "VXI",
+          "fuel": "20 to 26 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgBZy_QP9wjGhOjvqx_dxRSLtQ6ykJajvax_iU1w&usqp=CAE&s"
+        },
+        {
+          "name": "Dzire",
+          "variant": "LXi",
+          "fuel": "22 to 31 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1200x900/n/cw/ec/143181/maruti-suzuki-dzire-right-front-three-quarter1.jpeg?isig=0&wm=0"
+        },
+        {
+          "name": "Dzire",
+          "variant": "VXi",
+          "fuel": "22 to 31 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1200x900/n/cw/ec/143181/maruti-suzuki-dzire-right-front-three-quarter1.jpeg?isig=0&wm=0"
+        },
+        {
+          "name": "Baleno",
+          "variant": "Sigma",
+          "fuel": "22 to 31 Km/l",
+          "year": "2023",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5HwFTdADuGdeWioAzBngvcxCavoilWGax_uhyXVQ&usqp=CAE&s"
+        }
+      ]
+    },
+    {
+      "key": "Hyundai",
+      "value": [
+        {
+          "name": "i20",
+          "variant": "Sportz",
+          "fuel": "17 to 20 Km/l",
+          "year": "2023",
+          "url": "https://i.ytimg.com/vi/84SuY24Mz-c/maxresdefault.jpg"
+        },
+        {
+          "name": "Creta",
+          "variant": "E",
+          "fuel": "17 to 21 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/142275/left-front-three-quarter5.jpeg?isig=0&wm=0"
+        },
+        {
+          "name": "Creta",
+          "variant": "EX",
+          "fuel": "17 to 21 Km/l",
+          "year": "2023",
+          "url": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/142275/left-front-three-quarter5.jpeg?isig=0&wm=0"
+        },
+        {
+          "name": "Verna",
+          "variant": "SX",
+          "fuel": "19 to 21 Km/l",
+          "year": "2023",
+          "url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202302/2023_hyundai_verna_1-sixteen_nine.jpg?VersionId=e6ebX4H_cQOpKyOU7tzt6vkBh9JIcCJp"
+        },
+        {
+          "name": "Verna",
+          "variant": "SX(O)",
+          "fuel": "19 to 21 Km/l",
+          "year": "2023",
+          "url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202302/2023_hyundai_verna_1-sixteen_nine.jpg?VersionId=e6ebX4H_cQOpKyOU7tzt6vkBh9JIcCJp"
+        }
+      ]
+    }
+  ]
+}
