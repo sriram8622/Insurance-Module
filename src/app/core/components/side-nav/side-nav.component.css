@@ -1,0 +1,51 @@
+li, .dropdown>li{
+    list-style: none;
+    margin: 10px 0px;
+    text-align: center;
+    padding:10px 0px;
+}
+svg{
+    margin:0px;
+    text-align: center;
+}
+h6{
+    text-align: left;
+    padding:10px 15px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-weight: 400;
+    font-size:14px ;
+}
+li:hover .sub-menu{
+    display: block;
+}
+.main-menu:hover{
+  background-color:rgb(104, 83, 79);
+  box-shadow: inset 3px 0px   rgb(255, 255, 255) ;
+}
+.main-menu{
+    margin:0px
+}
+.dropdown{
+    position: absolute;
+    color:white;
+    left:90px;
+    top:90px;
+    background-color: rgb(104, 83, 79);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width:10%;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu>ul{
+    padding:0px;
+}
+
+.vehicle{
+    padding:3px 10px 0px;
+}
