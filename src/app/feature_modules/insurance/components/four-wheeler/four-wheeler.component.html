@@ -1,1 +1,55 @@
-<p>four-wheeler works!</p>
+<div class="container-fluid">
+    <div class="row pt-4 d-flex justify-content-center">
+        <div class="col-md-11 p-4" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ">
+            <form [formGroup]="fourWheeler">
+                <div class="row">
+                    <div class="col-md-3">
+                        <select class="form-select" formControlName="brand"  (change)="getValue()"
+                            aria-label="Default select example">
+                            <option value="">Select your car brand</option>
+                            <option *ngFor="let brand of brands;let i=index" [value]="brand">{{brand}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" formControlName="type" 
+                            aria-label="Default select example">
+                            <option value="">Select your car type</option>
+                            <option *ngFor="let carType of carTypes;let i=index" [value]="carType">{{carType}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-primary" (click)="getData()">Get Details</button>
+                    </div>
+                </div>
+            </form>
+            <div *ngFor="let car of carDetailsList">
+                <div class="row">
+                    <div class="col-md-2">
+                        <p>{{car.id}}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>{{car.make}}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>{{car.model}}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>{{car.type}}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>{{car.year}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

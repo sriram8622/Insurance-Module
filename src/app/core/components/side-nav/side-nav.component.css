@@ -23,7 +23,7 @@ li:hover .sub-menu{
     display: block;
 }
 .main-menu:hover{
-  background-color:rgb(104, 83, 79);
+  background-color:rgb(105, 75, 70);
   box-shadow: inset 3px 0px   rgb(255, 255, 255) ;
 }
 .main-menu{
@@ -33,17 +33,24 @@ li:hover .sub-menu{
     position: absolute;
     color:white;
     left:90px;
-    top:90px;
-    background-color: rgb(104, 83, 79);
+    top:0px;
+    background-color: rgb(105, 75, 70);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    width:10%;
+    width:150px;
 }
 .sub-menu{
     display: none;
 }
 .sub-menu>ul{
     padding:0px;
+}
+.dropdown>li{
+    padding:0px;
+    margin:5px
+}
+.dropdown>li:hover{
+    transform:translate(8px,0px);
 }
 
 .vehicle{

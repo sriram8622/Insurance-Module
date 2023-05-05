@@ -8,18 +8,10 @@ import { demoService } from '../../services/demo.service';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor(private demoService: demoService){}
+  constructor(){}
 
   ngOnInit() {
-    this.getBrand();
   }
 
-  getBrand(){
-    this.demoService.getBrand().subscribe({
-      next:(data)=>{
-        console.log(data);
-        
-      }
-    })
-  }
+
 }
