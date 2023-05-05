@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { TwoWheelerComponent } from './components/two-wheeler/two-wheeler.component';
 import { FourWheelerComponent } from './components/four-wheeler/four-wheeler.component';
 import { SixWheelerComponent } from './components/six-wheeler/six-wheeler.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { SixWheelerComponent } from './components/six-wheeler/six-wheeler.compon
   ],
   imports: [
     CommonModule,
-    InsuranceRoutingModule
+    InsuranceRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class InsuranceModule { }

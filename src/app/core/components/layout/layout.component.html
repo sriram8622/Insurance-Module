@@ -1,18 +1,18 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 p-0">
+        <div class="col-md-12 p-0 " >
             <app-header></app-header>
         </div>
     </div>
-    <div class="row" >
-        <div class="col-md-12 p-0">
-
-            <div style="background-color: rgb(57,43,40); height:660px; width:90px; float:left">            
-                <app-side-nav></app-side-nav>
-            </div>
-            <div style="width:100%" >
-                <router-outlet></router-outlet>
-            </div>
+    <div class="row">
+        <div class="col-md-12 p-0 ">
+                <div style="background-color: rgb(57,43,40); height: 100%;  width: 90px;  position: fixed; ">
+                    <app-side-nav></app-side-nav>
+                </div>
+                <div style=" margin-left: 90px;">
+                    <router-outlet></router-outlet>
+                </div>
+            <!-- </div> -->
         </div>
     </div>
 </div>

@@ -7,6 +7,14 @@
                     "model":"latest"
                 }
             }
+        ],
+        "mahindra": [
+            {
+                "thar": {
+                    "name": "sumo123",
+                    "model": "latest"
+                }
+            }
         ]
     }
 ]
