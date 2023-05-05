@@ -7,8 +7,6 @@ import {  RouterModule } from '@angular/router';
 import { SignUpModuleComponent } from './components/header/sign-up-module/sign-up-module.component';
 import { SignInModuleComponent } from './components/header/sign-in-module/sign-in-module.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -25,6 +23,7 @@ import { SignInModuleComponent } from './components/header/sign-in-module/sign-i
     HeaderComponent,
     LayoutComponent,
     SideNavComponent,
+    
   ],
 })
 export class CoreModule { }

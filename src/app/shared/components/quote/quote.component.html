@@ -1,1 +1,129 @@
-<p>quote works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h5 >Personal Details</h5>
+                </div>
+                <div class="card-body">
+                    <!-- <div class="PersonalDet"> -->
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label> 
+                            <input type="text" id="exampleFormControlInput1" class="form-control" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">DOB</label>
+                            <input type="date" id="exampleFormControlInput2" class="form-control" />
+                        </div>
+                        <div class="col-md-4 mb-3"> 
+                            <label for="exampleFormControlInput3" class="form-label">Gender</label> 
+                            <select class="form-select" id="exampleFormControlInput3" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlInput4" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput4">
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 ">            
+           
+            <div class="col-md-11">
+                <div class="card mt-3 mb-3">
+                    <div class="card-header">
+                        <h5 >Vehicle Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- <div class="col-md-4">Year: <input type="text" id="formControlLg" class="form-control" /> -->
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="exampleFormControlInput3" class="form-label col-md-4">Year</label> 
+                                <select class="col-md-8 form-select" id="year" name="year">
+                                    <option value="">year</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+                            </div>
+                        
+                            <div class="col-md-4 mb-3"> 
+                                <label for="exampleFormControlInput3" class="form-label">Make</label> 
+                                <input type="text" id="formControlLg" class="form-control" />
+                            </div>
+                            <div class="col-md-4 mb-3"> 
+                                <label for="exampleFormControlInput3" class="form-label">Model</label>
+                                <input type="text" id="formControlLg" class="form-control" />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="exampleFormControlInput3" class="form-label">Vehicle Use</label>
+                                <div class="btn-group ms-3">
+                                    <input mdbRadio type="radio" class="form-check-input" name="vehicleUse" id="option1" autocomplete="off"/>
+                                    <label  for="option1">OWN</label>
+                                    <input mdbRadio type="radio" class="form-check-input ms-2" name="vehicleUse" id="option2" autocomplete="off"/>
+                                    <label  for="option2">COMMERCIAL</label>        
+                                </div>
+                            </div>
+                
+                            <div class="col-md-4 mb-3">
+                                <label for="exampleFormControlInput3" class="form-label">Vehicle Category</label>
+                                <div class="btn-group ms-3">
+                                    <input mdbRadio type="radio" class="form-check-input" name="vehicleCat" id="option3" autocomplete="off" (click)="onradio(false)"/>
+                                    <label  for="option3">NEW</label>
+                                    <input mdbRadio type="radio" class="form-check-input ms-2" name="vehicleCat" id="option4" autocomplete="off" (click)="onradio(true)"/>
+                                    <label  for="option4">OLD</label>        
+                                </div>
+                            </div>
+                
+                            <div class="card-row mb-3" *ngIf="flag">
+                                <div class="row">
+                                    <div class="col-md-4">Kilameter Driven: <input type="text" id="formControlLg" class="form-control" /></div>
+                                    <div class="col-md-4">Date of purchase: <input type="text" id="formControlLg" class="form-control" /></div>
+                                    <div class="col-md-4">Registration Number: <input type="text" id="formControlLg" class="form-control" /></div>
+                                    <div class="col-md-4">Insurance Expire Date: <input type="text" id="formControlLg" class="form-control" /></div>
+                                    <div class="col-md-4">No of Owners: <input type="text" id="formControlLg" class="form-control" /></div>
+                                </div>
+                            </div>
+                
+                            <div class="PersonalDet"><h5>Is your Vehicle Owned, financed or leased?</h5>
+                                <div class="btn-group">
+                                    <input mdbRadio type="radio" class="form-check-input" name="options" id="option5" autocomplete="off"/>
+                                    <label  for="option5">OWNED</label>
+                                    <input mdbRadio type="radio" class="form-check-input ms-2" name="options" id="option6" autocomplete="off"/>
+                                    <label  for="option6">FINANCED</label>
+                                    <input mdbRadio type="radio" class="form-check-input ms-2" name="options" id="option7" autocomplete="off"/>
+                                    <label  for="option7">LEASED</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="col-md text-center">
+        <button
+        type="button"
+        class="btn btn-primary"
+        clmBtn
+        color="success"
+        clmWavesEffect
+        >
+        Get Quote
+        </button>
+    </div>
+</div>
