@@ -1,19 +1,117 @@
-<div class="container-fluid">
-    <div class="row"style="box-shadow: 0 4px 2px -2px gray; padding:10px">
-        <div class="col-md-3 p-0" >
-            <img src="../../../../assets/insurance-images.jpg" width="100px" height="60px" alt="Insurance">
+<div class="container-fluid " [ngClass]="theme === 'black' ? 'theme-black':theme === 'blue'?'theme-blue':'theme-brown'">
+    <div class="row inner-container">
+        <div class="col-md-2 p-0">
+            <img src="../../../../assets/insurance-logo-3.png" width="150px" height="60px" alt="Insurance">
         </div>
-        <li class=" main-menu">
-            <a routerLink="/signIn" routerLinkActive="active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-calculator"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
-                    <path
-                        d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
-                </svg><br>
-                Sign In
-            </a>
-        </li>
+        <div class="col-md-7 p-0 d-flex justify-content-center">
+            <li class="mx-3 main-menu">
+                <a routerLink="/insurance" routerLinkActive="active">
+                    <span class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            class="bi bi-car-front-fill " viewBox="0 0 16 16">
+                            <path
+                                d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z" />
+                        </svg>
+                    </span>
+                    <div class="menu-content">
+                        Insurance
+                    </div>
+                </a>
+                <div class="sub-menu">
+                    <ul class="dropdown pb-3">
+                        <h6>Insurance</h6>
+                        <li class="vehicle m-0">
+                            <a routerLink="/insurance/two-wheeler" routerLinkActive="active">Two Wheeler</a>
+                        </li>
+                        <li class="vehicle">
+                            <a routerLink="/insurance/four-wheeler" routerLinkActive="active">Four Wheeler</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mx-3 main-menu">
+                <a routerLink="/getQuote" routerLinkActive="active">
+                    <span class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            class="bi bi-calculator" viewBox="0 0 16 16">
+                            <path
+                                d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                            <path
+                                d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
+                        </svg></span>
+                    <div class="menu-content">GetQuote</div>
+                </a>
+            </li>
+            <li class="mx-3 main-menu">
+                <a routerLink="/claim" routerLinkActive="active">
+                    <span class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            class="bi bi-cash-stack" viewBox="0 0 16 16">
+                            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                            <path
+                                d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z" />
+                        </svg>
+                    </span>
+                    <div class="menu-content">
+                        Claim
+                    </div>
+                </a>
+            </li>
+        </div>
+        <div class="col-md-3 container-left-menu">
+            <div>
+                <span class="log-menu">
+                    <a routerLink="/signIn" class="sign-in">SignIn</a>
+                    <span class="hr-line"></span>
+                    <a routerLink="/signIn" class="sign-up">Sign UP</a>
+                </span>
+                <span class="profile-icon" (click)="isDisplayProfile=!isDisplayProfile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(255,114,0)"
+                        class="bi bi-person mb-1" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </span>
+                <div [ngClass]="isDisplayProfile?'profile-content':'profile-content-nodisplay'">
+                   
+                    <span class="close" aria-hidden="true"(click)="isDisplayProfile=!isDisplayProfile">&times;</span>
+                    <div class="profile">
+                        <div class="inner-profile-icon-container">
+                            <span class="inner-profile-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
+                                    class="bi bi-person mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <h6 class="name">1096-Vigneshwaran Pandi</h6>
+                        <a href="" class="mail">vigneshwaranp@clarium.tech</a>
+                        <p class="role">Trainee Software Engineer</p>
+                    </div>
+                    <div style="padding: 10px;">
+                        <div>
+                            <p class="profile-inner-heading">Themes</p>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p>Theme Color</p>
+                                <div>
+                                    <span class="colors" id="color1" (click)="theme='black'"></span>
+                                    <span class="colors" id="color2" (click)="theme='blue'"></span>
+                                    <span class="colors" id="color3" (click)="theme='brown'"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <p class="profile-inner-heading">Settings</p>
+                        </div>
+                        <div>
+                            <p class="profile-inner-heading">Help</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

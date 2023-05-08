@@ -1,20 +1,25 @@
-[
-    {
-        "tata":[
-            {
-                "sumo":{
-                    "name":"sumo123",
-                    "model":"latest"
-                }
-            }
-        ],
-        "mahindra": [
-            {
-                "thar": {
-                    "name": "sumo123",
-                    "model": "latest"
-                }
-            }
-        ]
-    }
-]
+{
+    "carBrandList":["Tata","Mahindra"],
+    "carTypeList":["SUV","MINI"],
+    "carVarientList":["Sumo","Thor"],
+    "carDetails":[
+
+        {
+            "name":"Sumo123",
+            "brand":"Tata",
+            "varient":"Sumo",
+            "type":"SUV",
+            "model":"CR-Z"
+        },
+        {
+            "name": "Thor123",
+            "brand": "Mahindra",
+            "varient": "Thor",
+            "type": "MINI",
+            "model": "classic"
+        }
+    ]
+
+}
+
+

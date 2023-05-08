@@ -1,23 +1,36 @@
-<div class="container">
-    <div class="row align-items-center"  Style="background-color: #ecbc9c">
-      <div class="col">
-        User Name <input type="text" #userName>
-        Password <input type="password" #userSecret>
-        <br>
-        <br>
-        <input type="button" #sigIn value="Sig-In">
-        <input type="reset" #reset value="Clear">
-      </div>
-      <div class="col">
-        <a href="">Trouble signing in?</a>
-        <br>
-        <a href="">Sign up with Gmail</a>
-        <br>
-        <a href="">Sign up with LinkedIn</a>
-        <br>
-        <a href="">Sign up with GitHub</a>
-        <br>
+<div class="container-fluid sign-in">
+  <div class="row" id="inner-container">
+    <div class="col-md-8 ">
+      <div class="row align-items-center" Style="background-color: #ecbc9c;padding:20px 0px 5px 0px">
+        <div class="col-md-6">
+          <div class="row" style="display:flex;justify-content:center ;">
+            <div class="col-md-8">
+              User Name <input type="text" class="form-control" #userName>
+              Password <input type="password" class="form-control" #userSecret>
+              <br>
+              <div style="display: flex; justify-content: center;">
+                <div>
+                  <input class="sign-in-btn" class="btn btn-success p-1 px-4 m-1" type="button" #sigIn value="Sig-In">
+                  <input type="reset" class="btn btn-success p-1 px-4" #reset value="Clear">
+                </div>
+              </div>
+              <p style="text-align: center;">Trouble signing in?</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <a href="">Trouble signing in?</a>
+          <br>
+          <a href="">Sign up with Gmail</a>
+          <br>
+          <a href="">Sign up with LinkedIn</a>
+          <br>
+          <a href="">Sign up with GitHub</a>
+          <br>
+        </div>
       </div>
     </div>
   </div>
 
+</div>

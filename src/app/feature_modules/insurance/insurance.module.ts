@@ -15,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     InsuranceComponent,
     TwoWheelerComponent,
     FourWheelerComponent,
-    SixWheelerComponent
+    SixWheelerComponent,
+    
   ],
   imports: [
     CommonModule,

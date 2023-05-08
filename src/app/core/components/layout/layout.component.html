@@ -1,16 +1,17 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="position: sticky;top:0;">
         <div class="col-md-12 p-0 " >
             <app-header></app-header>
         </div>
     </div>
-    <div class="row">
+    <div class="row" style="overflow-y: scroll;height:667px">
         <div class="col-md-12 p-0 ">
-                <div style="background-color: rgb(57,43,40); height: 100%;  width: 90px;  position: fixed; ">
+                <!-- <div style="background-color: rgb(57,43,40); height: 100%;  width: 90px;  position: fixed; ">
                     <app-side-nav></app-side-nav>
-                </div>
-                <div style=" margin-left: 90px;">
+                </div> -->
+                <div >
                     <router-outlet></router-outlet>
+                    <!-- <app-sign-in-module></app-sign-in-module> -->
                 </div>
             <!-- </div> -->
         </div>

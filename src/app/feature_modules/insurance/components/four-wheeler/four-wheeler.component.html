@@ -1,55 +1,48 @@
-<div class="container-fluid">
+<div class="container-fluid mt-5">
     <div class="row pt-4 d-flex justify-content-center">
-        <div class="col-md-11 p-4" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ">
+        <div class="col-md-4 me-3" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 5px; ">
             <form [formGroup]="fourWheeler">
-                <div class="row">
-                    <div class="col-md-3">
-                        <select class="form-select" formControlName="brand"  (change)="getValue()"
+                <div class="row d-flex justify-content-center mt-4 m-2 mb-4" >
+                    <div class="col-md-11">
+                        <h5>Car Information</h5>
+                        <label >Car Brand</label>
+                        <select class="form-select mb-2" formControlName="brand" (change)="getValue()"
                             aria-label="Default select example">
                             <option value="">Select your car brand</option>
                             <option *ngFor="let brand of brands;let i=index" [value]="brand">{{brand}}</option>
                         </select>
-                    </div>
-                    <div class="col-md-3">
-                        <select class="form-select" formControlName="type" 
-                            aria-label="Default select example">
+                        <label>Car Varient</label>
+                        <select class="form-select mb-2" formControlName="varient" (change)="getValue()" aria-label="Default select example">
+                            <option value="">Open this select menu</option>
+                            <option  style="color: black;" *ngFor="let carVarient of carVarients" [value]="carVarient">{{carVarient}}</option>
+                        </select>
+                        <label>Car Type</label>
+                        <select class="form-select mb-3" formControlName="type" (change)="getValue()" aria-label="Default select example">
                             <option value="">Select your car type</option>
                             <option *ngFor="let carType of carTypes;let i=index" [value]="carType">{{carType}}</option>
                         </select>
-                    </div>
-                    <div class="col-md-3">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-primary" (click)="getData()">Get Details</button>
+                        <button class="btn btn-primary get-info-button" (click)="getData()" [disabled]="isButtonDisable">Get
+                            Details</button>
                     </div>
                 </div>
             </form>
-            <div *ngFor="let car of carDetailsList">
-                <div class="row">
-                    <div class="col-md-2">
-                        <p>{{car.id}}</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>{{car.make}}</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>{{car.model}}</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>{{car.type}}</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>{{car.year}}</p>
-                    </div>
+        </div>
+    
+    <!-- <div class="row pt-4 d-flex justify-content-center" *ngIf="carDetails!== undefined  "> -->
+        <div class="col-md-7" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 5px;  ">
+            <div class="row" *ngIf="carDetails!== undefined  ">
+                <div class="col-md-7">
+                    <div class="p-3">
+                        <h2 class="m-0">{{carDetails.brand}}</h2>
+                        <p>{{carDetails.varient}}-{{carDetails.type}}-{{carDetails.model}}</p>
+                        <h4>{{carDetails.name}}</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum fuga corporis veniam qui! Corporis praesentium ex, eaque nisi rem saepe consequatur minima hic aspernatur maxime aliquid, est inventore cumque. Accusantium.</p>                    </div>                    
                 </div>
+                <div class="col-md-5 image">
 
+                </div>
             </div>
         </div>
     </div>
+  
 </div>
