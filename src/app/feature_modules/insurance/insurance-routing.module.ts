@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'four-wheeler',
-    component: FourWheelerComponent
+    component: FourWheelerComponent,
   },
   {
     path: 'six-wheeler',

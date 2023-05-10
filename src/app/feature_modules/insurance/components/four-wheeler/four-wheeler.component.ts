@@ -39,9 +39,7 @@ export class FourWheelerComponent implements OnInit {
         this.brands = data.carBrandList;
         this.carTypes = data.carTypeList;
         this.carVarients = data.carVarientList;
-        this.carDetailsList = data.carDetails;
-        console.log(this.carVarients);
-        
+        this.carDetailsList = data.carDetails;        
       }
     })
   }

@@ -8,6 +8,7 @@ import { TwoWheelerComponent } from './components/two-wheeler/two-wheeler.compon
 import { FourWheelerComponent } from './components/four-wheeler/four-wheeler.component';
 import { SixWheelerComponent } from './components/six-wheeler/six-wheeler.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     InsuranceRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class InsuranceModule { }
