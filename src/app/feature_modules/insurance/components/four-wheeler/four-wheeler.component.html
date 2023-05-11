@@ -2,33 +2,37 @@
     <div class="row pt-4 d-flex justify-content-center mb-5">
         <div class="col-md-4 me-3" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 5px; ">
             <form [formGroup]="fourWheeler">
-                <div class="row d-flex justify-content-center mt-4 m-2 mb-4" >
+                <div class="row d-flex justify-content-center mt-4 m-2 mb-4">
                     <div class="col-md-11">
                         <h5>Car Information</h5>
-                        <label >Car Brand</label>
+                        <label>Car Brand</label>
                         <select class="form-select mb-2" formControlName="brand" (change)="getValue()"
                             aria-label="Default select example">
                             <option value="">Select your car brand</option>
                             <option *ngFor="let brand of brands;let i=index" [value]="brand">{{brand}}</option>
                         </select>
                         <label>Car Varient</label>
-                        <select class="form-select mb-2" formControlName="varient" (change)="getValue()" aria-label="Default select example">
+                        <select class="form-select mb-2" formControlName="varient" (change)="getValue()"
+                            aria-label="Default select example">
                             <option value="">Open this select menu</option>
-                            <option  style="color: black;" *ngFor="let carVarient of carVarients" [value]="carVarient">{{carVarient}}</option>
+                            <option style="color: black;" *ngFor="let carVarient of carVarients" [value]="carVarient">
+                                {{carVarient}}</option>
                         </select>
                         <label>Car Type</label>
-                        <select class="form-select mb-3" formControlName="type" (change)="getValue()" aria-label="Default select example">
+                        <select class="form-select mb-3" formControlName="type" (change)="getValue()"
+                            aria-label="Default select example">
                             <option value="">Select your car type</option>
                             <option *ngFor="let carType of carTypes;let i=index" [value]="carType">{{carType}}</option>
                         </select>
-                        <button class="btn btn-primary get-info-button" (click)="getData()" [disabled]="isButtonDisable">Get
+                        <button class="btn btn-primary get-info-button" (click)="getData()"
+                            [disabled]="isButtonDisable">Get
                             Details</button>
                     </div>
                 </div>
             </form>
         </div>
-    
-    <!-- <div class="row pt-4 d-flex justify-content-center" *ngIf="carDetails!== undefined  "> -->
+
+        <!-- <div class="row pt-4 d-flex justify-content-center" *ngIf="carDetails!== undefined  "> -->
         <div class="col-md-7" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 5px;  ">
             <div class="row" *ngIf="carDetails!== undefined  ">
                 <div class="col-md-7">
@@ -36,18 +40,27 @@
                         <h2 class="m-0">{{carDetails.brand}}</h2>
                         <p>{{carDetails.varient}}-{{carDetails.type}}-{{carDetails.model}}</p>
                         <h4>{{carDetails.name}}</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum fuga corporis veniam qui! Corporis praesentium ex, eaque nisi rem saepe consequatur minima hic aspernatur maxime aliquid, est inventore cumque. Accusantium.</p>                    </div>                    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum fuga corporis veniam qui!
+                            Corporis praesentium ex, eaque nisi rem saepe consequatur minima hic aspernatur maxime
+                            aliquid, est inventore cumque. Accusantium.</p>
+                    </div>
                 </div>
-                <div class="col-md-5 image">
+                <div class="col-md-5 image" [ngStyle]="{'background-image': carDetails.image}">
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row  d-flex justify-content-center">
+        <div class="col-md-7  me-3 p-0">
             <app-vehicle></app-vehicle>
         </div>
+        <div class="col-md-4 me-3 p-0">
+            vigensh
+        </div>
     </div>
-  
+    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima repellat, iusto repellendus mollitia suscipit distinctio esse. Ipsam eius delectus aliquam at numquam impedit, itaque sint assumenda optio tenetur, earum non ut. Ea provident corrupti et, aliquid, voluptatem tempora earum ex modi libero accusamus esse rem autem enim commodi cupiditate. Quam laborum distinctio, porro facere numquam quae libero molestias, omnis odit, corporis placeat cumque at rerum maxime asperiores optio iure minima dicta debitis. Officia rem aperiam exercitationem. Itaque, ipsa? Fugit officia dolor recusandae tempore sed, amet vitae. Hic est iusto aliquam aspernatur beatae, dignissimos repudiandae necessitatibus sequi molestiae, inventore impedit!</p>
+    </div>
+
 </div>

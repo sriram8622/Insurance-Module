@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   isDisplayProfile: boolean = false;
-  theme: string = 'black';
+  theme: string = 'blue';
 
   
 }

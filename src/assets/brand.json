@@ -9,14 +9,16 @@
             "brand":"Tata",
             "varient":"Sumo",
             "type":"SUV",
-            "model":"CR-Z"
+            "model":"CR-Z",
+            "image": "url(../../../../../assets/tata-sumo.jpg)"
         },
         {
             "name": "Thor123",
             "brand": "Mahindra",
             "varient": "Thor",
             "type": "MINI",
-            "model": "classic"
+            "model": "classic",
+            "image": "url(../../../../../assets/thor.jpg)"
         }
     ]
 
