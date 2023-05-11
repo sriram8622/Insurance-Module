@@ -7,29 +7,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsuranceComponent implements OnInit {
 
-  images: string[] = ["./assets/insurance-1.jpg", "./assets/insurance-2.jpg","./assets/insurance-3.jpg"];
-  image!:string;
+  images: string[] = ["./assets/insurance-1.jpg", "./assets/insurance-2.jpg", "./assets/insurance-3.jpg"];
+  image!: string;
+  count: number = 0;
+  imageCount: number = 0;
+  currentSlideIndex = 0;
+
   ngOnInit() {
-    this.slideShow();
-    
-  }
-  slideShow(){
-    let count=0;
-    
+    this.autoSlideShow();
 
-    
-      setTimeout(()=>{
-       console.log("vignesh");
-      },3000)  
-    
-  
-       
   }
 
-  slideIndex: number = 0;
+  autoSlideShow() {
+    this.imageCount = this.images.length;
+    setInterval(() => {
+      if (this.count < this.imageCount - 1) {
+        this.currentSlideIndex = this.count;
+        this.count++;
+      } else {
+        this.currentSlideIndex = this.count;
+        this.count = 0;
+      }
+    }, 3000);
+  }
 
-  changeSlide(n: number) {
-    this.slideIndex += n;
+
+  changeSlide(n: number, type: string) {
+    if (type === "next") {
+      if (this.currentSlideIndex < this.imageCount - 1) {
+        this.currentSlideIndex += n;
+      }
+      else {
+        this.currentSlideIndex = 0;
+      }
+    } else {
+      if (this.currentSlideIndex === 0) {
+        this.currentSlideIndex = this.imageCount - 1;
+      }
+      else {
+        this.currentSlideIndex += n;
+      }
+    }
+
   }
 
 }

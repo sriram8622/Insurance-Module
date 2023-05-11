@@ -37,10 +37,11 @@ li:hover .sub-menu {
     color: white;
     left: 38%;
     top: 90%;
-    background-color: black;
+    background-color: rgb(9, 4, 63);
     border-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 150px;
+    z-index: 10;
 }
 
 .sub-menu {
@@ -103,12 +104,12 @@ li:hover .menu-content {
 
 }
 
-.theme-black {
-    background-color: black;
+.theme-blue {
+background-color: rgb(9, 4, 63);
 }
 
-.theme-blue {
-    background-color: rgb(9, 4, 63);
+.theme-black {
+    background-color: black;
 }
 .theme-brown {
     background-color:rgb(103, 33, 33)
@@ -149,6 +150,8 @@ li:hover .menu-content {
     width: 20%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
+    opacity:99;
+    z-index: 10;
 }
 
 .role {

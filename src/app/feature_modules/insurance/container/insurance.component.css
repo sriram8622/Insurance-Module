@@ -1,0 +1,23 @@
+.prev,.next{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+.bottom-nav{
+    width:20px;
+    height:5px;
+    background-color: white;
+    margin-right: 5px;
+}
+.bottom-nav-current {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+    margin-right: 5px;
+    /* margin-bottom:5px ; */
+}
+h5 {
+    color: rgb(255, 114, 0);
+    ;
+}
