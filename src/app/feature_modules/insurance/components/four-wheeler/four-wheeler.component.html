@@ -1,18 +1,19 @@
-<div class="container-fluid mt-5">
-    <div class="row pt-4 d-flex justify-content-center mb-5">
+<div class="container-fluid mt-4">
+    <h5 class="ms-5">Car Insurance</h5>
+    <div class="row pt-2 d-flex justify-content-center mb-5">
         <div class="col-md-4 me-3" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 5px; ">
             <form [formGroup]="fourWheeler">
                 <div class="row d-flex justify-content-center mt-4 m-2 mb-4">
                     <div class="col-md-11">
                         <h5>Car Information</h5>
                         <label>Car Brand</label>
-                        <select class="form-select mb-2" formControlName="brand" (change)="getValue()"
+                        <select class="form-select mb-2" formControlName="brand" (change)="getBrand()"
                             aria-label="Default select example">
                             <option value="">Select your car brand</option>
                             <option *ngFor="let brand of brands;let i=index" [value]="brand">{{brand}}</option>
                         </select>
                         <label>Car Varient</label>
-                        <select class="form-select mb-2" formControlName="varient" (change)="getValue()"
+                        <select class="form-select mb-2" formControlName="varient" (change)="getVarient()"
                             aria-label="Default select example">
                             <option value="">Open this select menu</option>
                             <option style="color: black;" *ngFor="let carVarient of carVarients" [value]="carVarient">
@@ -35,7 +36,7 @@
         <!-- <div class="row pt-4 d-flex justify-content-center" *ngIf="carDetails!== undefined  "> -->
         <div class="col-md-7" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 5px;  ">
             <div class="row" *ngIf="carDetails!== undefined  ">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="p-3">
                         <h2 class="m-0">{{carDetails.brand}}</h2>
                         <p>{{carDetails.varient}}-{{carDetails.type}}-{{carDetails.model}}</p>
@@ -45,7 +46,7 @@
                             aliquid, est inventore cumque. Accusantium.</p>
                     </div>
                 </div>
-                <div class="col-md-5 image" [ngStyle]="{'background-image': carDetails.image}">
+                <div class="col-md-6 image" [ngStyle]="{'background-image': carDetails.image}">
 
                 </div>
             </div>

@@ -1,7 +1,26 @@
 {
+    "carBrandList": [
+        "Tata",
+        "Mahindra",
+        "Ford",
+        "Honda",
+        "BMW"
+    ],
+    "tataCarTypeList": [
+        "SUV",
+        "Convertible",
+        "Pickup",
+        "Van/Minivan",
+        "Wagon",
+        "Sedan",
+        "Coupe",
+        "Hatchback"
+    ],
     "carBrandList":["Tata","Mahindra"],
     "carTypeList":["SUV","MINI"],
-    "carVarientList":["Sumo","Thor"],
+    "carVarientList":[{"tata":"Sumo"},
+            {"Mahindra":"Thor"}],
+
     "carDetails":[
 
         {
