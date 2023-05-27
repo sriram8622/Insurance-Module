@@ -1,0 +1,14 @@
+<div class="card text-center" style="width: max-content; background: #09043F;">
+  <div class="card-body">
+      <div class="align-icons-row">
+          <div class="custm-box" *ngFor="let item of navList">
+            <div class="icon-container" [routerLink]="item.url" routerLinkActive="active-link">
+                <div class="btn-icon">
+                    <span class="material-icons custn-icon">{{item.icon}}</span>
+                </div>
+              </div>
+              <div class="btn-icon-label">{{item.label}}</div>
+          </div>
+      </div>
+  </div>
+</div>

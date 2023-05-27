@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DynamicNavigation } from 'src/app/shared/models/dynamic-navigation.model';
 
 @Component({
   selector: 'app-claim',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./claim.component.css']
 })
 export class ClaimComponent {
+  displayNavList: DynamicNavigation[] = [
+    {
+      label: 'Car',
+      url: 'car-claim',
+      icon: 'directions_car'
+    },
+    {
+      label: 'Bike',
+      url: '',
+      icon: 'two_wheeler'
+    },
+    {
+      label: 'Health',
+      url: '',
+      icon: 'health_and_safety'
+    }
+  ]
 
 }

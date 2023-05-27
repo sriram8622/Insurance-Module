@@ -1,1 +1,12 @@
-<p>claim works!</p>
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-md-12 align-center">
+            <app-card-nav-icon [navList]="displayNavList"></app-card-nav-icon>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
