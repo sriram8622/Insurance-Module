@@ -5,11 +5,16 @@ import { RouterModule } from '@angular/router';
 import { SharedRoutingModule } from './shared-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VehicleComponent } from './components/vehicle/vehicle.component';
+import { CardNavIconComponent } from './components/card-nav-icon/card-nav-icon.component';
 
 
 
 @NgModule({
-  declarations: [QuoteComponent,VehicleComponent],
+  declarations: [
+    QuoteComponent,
+    VehicleComponent,
+    CardNavIconComponent
+  ],
   imports: [
     CommonModule,
     RouterModule,
@@ -19,7 +24,8 @@ import { VehicleComponent } from './components/vehicle/vehicle.component';
   ],
   exports: [
     QuoteComponent,
-    VehicleComponent
+    VehicleComponent,
+    CardNavIconComponent
   ],
 })
 export class SharedModule { }
