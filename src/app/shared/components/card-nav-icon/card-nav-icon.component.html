@@ -3,11 +3,11 @@
       <div class="align-icons-row">
           <div class="custm-box" *ngFor="let item of navList">
             <div class="icon-container" [routerLink]="item.url" routerLinkActive="active-link">
-                <div class="btn-icon">
-                    <span class="material-icons custn-icon">{{item.icon}}</span>
-                </div>
+              <div class="btn-icon">
+                  <span class="material-icons custn-icon">{{item.icon}}</span>
               </div>
-              <div class="btn-icon-label">{{item.label}}</div>
+            </div>
+            <div class="btn-icon-label">{{item.label}}</div>
           </div>
       </div>
   </div>
