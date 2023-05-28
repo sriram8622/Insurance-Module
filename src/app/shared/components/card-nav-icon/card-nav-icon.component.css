@@ -52,6 +52,12 @@
     font-weight: 400;
     color: #ffffff9e;
 }
-/* .active-link {
+.active-link .icon-container .btn-icon {
     background: white;
-} */
+}
+.active-link .icon-container .custn-icon {
+    color: #2a264d;
+}
+.active-link .btn-icon-label {
+    color: white;
+}

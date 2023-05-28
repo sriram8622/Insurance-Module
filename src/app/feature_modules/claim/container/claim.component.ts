@@ -15,12 +15,12 @@ export class ClaimComponent {
     },
     {
       label: 'Bike',
-      url: '',
+      url: 'bike-claim',
       icon: 'two_wheeler'
     },
     {
       label: 'Health',
-      url: '',
+      url: 'health-claim',
       icon: 'health_and_safety'
     }
   ]
