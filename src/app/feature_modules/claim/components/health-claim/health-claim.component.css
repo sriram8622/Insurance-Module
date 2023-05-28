@@ -18,3 +18,11 @@
     color: gray;
     margin-bottom: 12px;
 }
+.theam-img-style {
+    border-top-left-radius: 205px;
+    border-bottom-left-radius: 0px;
+    background: #FD6927;
+    position: absolute;
+    bottom: 24px;
+    padding: 24px 16px;
+}
