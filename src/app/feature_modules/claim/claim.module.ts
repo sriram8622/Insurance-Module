@@ -6,13 +6,15 @@ import { ClaimComponent } from './container/claim.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CarClaimComponent } from './components/car-claim/car-claim.component';
 import { BikeClaimComponent } from './components/bike-claim/bike-claim.component';
+import { HealthClaimComponent } from './components/health-claim/health-claim.component';
 
 
 @NgModule({
   declarations: [
     ClaimComponent,
     CarClaimComponent,
-    BikeClaimComponent
+    BikeClaimComponent,
+    HealthClaimComponent
   ],
   imports: [
     CommonModule,

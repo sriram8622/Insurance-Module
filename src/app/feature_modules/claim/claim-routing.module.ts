@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClaimComponent } from './container/claim.component';
 import { CarClaimComponent } from './components/car-claim/car-claim.component';
 import { BikeClaimComponent } from './components/bike-claim/bike-claim.component';
+import { HealthClaimComponent } from './components/health-claim/health-claim.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'bike-claim',
         component: BikeClaimComponent
+      },
+      {
+        path: 'health-claim',
+        component: HealthClaimComponent
       }
     ]
   }
